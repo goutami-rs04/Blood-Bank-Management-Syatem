@@ -18,10 +18,10 @@ A desktop application built using **Java Swing** and **MySQL** for managing bloo
 - Java (Swing GUI)
 - MySQL 8.0 (DBMS - Backend Database)
 - JDBC (Java Database Connectivity)
-- NetBeans IDE
+- Eclipse IDE
 - SQL (DDL, DML, DCL commands)
 - MySQL Triggers (Automated Business Rules)
-- MySQL Views (compatible_blood_view)
+- MySQL Views
 - MySQL Events (Scheduled Tasks)
 
 ## 🗃️ DBMS Concepts Used
@@ -35,16 +35,41 @@ A desktop application built using **Java Swing** and **MySQL** for managing bloo
 - Date Functions (DATEDIFF, CURDATE)
 
 ## 🗄️ Database Tables
-- donors, bloodstock, bloodstocksummary
-- hospitals, bloodrequests, donationhistory
-- staff, blood_compatibility, compatible_blood_view
+- donors
+- bloodstock
+- bloodstocksummary
+- hospitals
+- bloodrequests
+- donationhistory
+- staff
+- blood_compatibility
+- compatible_blood_view
 
 ## ▶️ How to Run
 1. Install Java JDK 11 or higher
 2. Install MySQL 8.0
-3. Import the database SQL file
-4. Open project in NetBeans
-5. Run Dashboard.java
+3. Open MySQL and run:
+   CREATE DATABASE bloodbanksytem;
+4. Import the database:
+   mysql -u root -p bloodbanksytem < BloodBank.sql
+5. Open project in Eclipse IDE
+6. Open DBConnection.java and update:
+   - username = "root"
+   - password = "A#Hegde123"
+7. Run Dashboard.java
+
+## 🗄️ Database Setup
+- Database file: **BloodBank.sql** (included in this repository)
+- Import it into MySQL before running the application
+- Database name: **bloodbanksytem**
+- Tables: 9
+- Triggers: 5
+- Views: 1
+
+## 🔐 Default Login
+| Username | Password | Role |
+|----------|----------|------|
+| admin    | admin123 | Admin|
 
 ## 👩‍💻 Author
 **goutami-rs04**
