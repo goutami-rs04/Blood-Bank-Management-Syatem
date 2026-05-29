@@ -1,4 +1,3 @@
-
 # 🩸 Blood Bank Management System
 
 A desktop application built using **Java Swing** and **MySQL** for managing blood bank operations efficiently.
@@ -17,9 +16,23 @@ A desktop application built using **Java Swing** and **MySQL** for managing bloo
 
 ## 🛠️ Technologies Used
 - Java (Swing GUI)
-- MySQL 8.0
+- MySQL 8.0 (DBMS - Backend Database)
 - JDBC (Java Database Connectivity)
 - NetBeans IDE
+- SQL (DDL, DML, DCL commands)
+- MySQL Triggers (Automated Business Rules)
+- MySQL Views (compatible_blood_view)
+- MySQL Events (Scheduled Tasks)
+
+## 🗃️ DBMS Concepts Used
+- Normalization (3NF)
+- Entity Relationship Diagram (ERD)
+- Foreign Key Constraints
+- Triggers (5 triggers implemented)
+- Views
+- Aggregate Functions (SUM, COUNT)
+- Joins (INNER JOIN, LEFT JOIN)
+- Date Functions (DATEDIFF, CURDATE)
 
 ## 🗄️ Database Tables
 - donors, bloodstock, bloodstocksummary
